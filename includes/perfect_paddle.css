@@ -11,3 +11,22 @@ h1 {
   font-size: 35px;
   font-weight: bold;
 }
+
+.page-title-enjoy{
+  text-transform: uppercase;
+  color
+}
+
+.cursive {
+  font-family: 'Zapfino';
+}
+
+.big {
+  font-size: 50px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
