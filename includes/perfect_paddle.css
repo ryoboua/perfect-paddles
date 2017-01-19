@@ -1,28 +1,13 @@
-.container_nav {
-  background-color: black;
-  border: 2px solid black;
-}
-.nav {
-  display: inline-block;
-  margin: 15px;
-
+h1 {
+  color: red;
 }
 
-.nav li {
-    display: inline-block;
- 	  color: white;
-    border: 1px solid black;  	
+.hilite {
+  color: darkred;
 }
 
-.jumbotron{
-
-  width: 200px;
+.embiggen {
+  color: blue;
+  font-size: 35px;
+  font-weight: bold;
 }
-
-/*.logo {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  float: left;
-  margin: 10px;
-}*/
