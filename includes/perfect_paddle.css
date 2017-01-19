@@ -1,0 +1,28 @@
+.container_nav {
+  background-color: black;
+  border: 2px solid black;
+}
+.nav {
+  display: inline-block;
+  margin: 15px;
+
+}
+
+.nav li {
+    display: inline-block;
+ 	  color: white;
+    border: 1px solid black;  	
+}
+
+.jumbotron{
+
+  width: 200px;
+}
+
+/*.logo {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 10px;
+}*/
