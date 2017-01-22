@@ -23,26 +23,26 @@
   background-color: black;
   margin: 0 auto;
   display: block;
-  text-align: center;
+  position: relative;
 }
 
 .menu .logo{
-  display: block;
-  height: 50px;
-  margin: 10px auto;
-  padding-top: 10px;
-
+display: inline-block;
+height: 50px;
+float: left;
+margin: 10px 20px;
 }
 .menu ul{
-  display: block;
+  display: inline-block;
   list-style-type: none;
-  /*padding-left: 0;*/
-  margin: 0px auto;
-  padding: 10px 60px 35px;
+  padding-left: 0;
+  position: absolute;
+  right: 0px;
+  margin: 25px 20px;
 }
 
 .menu li{
-  font-family: Karla-Bold;
+  font-family: Karla-Regular;
   text-transform: uppercase;
   color: white;
   float: left;
@@ -55,13 +55,13 @@
 
 .jumbotron{
   text-align: center;
-  background: url('../images/kayak-bkgd.jpg') no-repeat center;
-
-  /*background-size: cover;*/
+  background: url('../images/kayak-bkgd.jpg') ;
+  background-size: cover;
+  opacity: 0.6;
   height: 700px;
 }
 
-.jumbotron h1 {
+h1 {
   margin: 0 auto;
   color: white;
 }
@@ -71,7 +71,7 @@
   text-transform: uppercase;
   display: block;
   font-size: 25px;
-  padding: 150px 0px 0px;
+  padding: 70px 0px 0px;
 }
 
 .cursive {
@@ -81,49 +81,20 @@
 }
 
 .big {
-  font-size: 55px;
+  font-size: 90px;
   /*font-family: pacifico;*/
 }
 
 .hilite {
   color: white;
   font-size: 21px;
-  background-color: rgba(0,0,0,0.5);
-  margin: 20px 20px;
+  background-color: rgba(0,0,0,0.7);
+  margin: 20px 430px;
   padding: 5px 0px;
-  font-family: Karla-Regular;
 }
 
-.register {
-  background-color: #FF5656;
-  color: white;
-  text-transform: uppercase;
-  font-size: 25px;
-  border-radius: 500px;
-  padding: 15px;
-  border: 0px;
-  margin-top: 20px;
-}
-
-.about {
-  color: #646464;
-  text-align: center;
-}
-
-.about h2 {
-  font-family: pacifico;
-  font-size: 55px;
-}
-
-.about p {
-  font-family: Karla-Regular;
-  font-size: 21px;
-  line-height: 35px;
-}
-
-.square{
-  height: 350px;
-  width: 390px;
-  margin: 10px 3px;
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+.square {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
