@@ -34,34 +34,38 @@
 
 }
 .menu ul{
-  display: block;
   list-style-type: none;
-  /*padding-left: 0;*/
-  margin: 0px auto;
-  padding: 10px 60px 35px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu li{
   font-family: Karla-Bold;
   text-transform: uppercase;
   color: white;
-  float: left;
-  margin: 0px 10px;
+  font-size: 1em;
+  /*margin: 0px 10px;*/
+  display: inline-block;
+  max-width: 70%;
 }
 
 .clear_both{
   clear:both;
 }
 
-.jumbotron{
+.banner{
   text-align: center;
-  background: url('../images/kayak-bkgd.jpg') no-repeat center;
-
-  /*background-size: cover;*/
+  background: linear-gradient(to top, rgba(0, 0, 0, .35) 0%,
+  rgba(0, 0, 0, 0.25)100%),
+  url('../images/kayak-bkgd.jpg');
+  background-position: top center;
+  background-size: cover;
   height: 700px;
 }
 
-.jumbotron h1 {
+.banner h1 {
   margin: 0 auto;
   color: white;
 }
@@ -82,7 +86,6 @@
 
 .big {
   font-size: 55px;
-  /*font-family: pacifico;*/
 }
 
 .hilite {
@@ -121,9 +124,15 @@
   line-height: 35px;
 }
 
+.images{
+  max-width: 100%;
+}
+
 .square{
-  height: 350px;
-  width: 390px;
+  /*height: 350px;
+  width: 390px;*/
   margin: 10px 3px;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+  max-width: 33.3%;
+  height: auto;
 }
