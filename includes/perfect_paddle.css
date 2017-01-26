@@ -3,20 +3,24 @@
     src: url(fonts/Pacifico.ttf);
 }
 @font-face {
-    font-family: Karla-Bold;
-    src: url(fonts/Karla-Bold.ttf);
-}
-@font-face {
-    font-family: Karla-BoldItalic;
-    src: url(fonts/Karla-BoldItalic.ttf);
-}
-@font-face {
-    font-family: Karla-Italic;
-    src: url(fonts/Karla-Italic.ttf);
-}
-@font-face {
-    font-family: Karla-Regular;
+    font-family: Karla;
     src: url(fonts/Karla-Regular.ttf);
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
 }
 
 .menu{
@@ -42,11 +46,10 @@
 }
 
 .menu li{
-  font-family: Karla-Bold;
+  font-family: Karla;
   text-transform: uppercase;
   color: white;
   font-size: 1em;
-  /*margin: 0px 10px;*/
   display: inline-block;
   max-width: 70%;
 }
@@ -71,7 +74,7 @@
 }
 
 .page-title-enjoy{
-  font-family: Karla-Regular;
+  font-family: Karla;
   text-transform: uppercase;
   display: block;
   font-size: 25px;
@@ -94,7 +97,7 @@
   background-color: rgba(0,0,0,0.5);
   margin: 20px 20px;
   padding: 5px 0px;
-  font-family: Karla-Regular;
+  font-family: Karla;
 }
 
 .register {
@@ -119,20 +122,19 @@
 }
 
 .about p {
-  font-family: Karla-Regular;
+  font-family: Karla;
   font-size: 21px;
   line-height: 35px;
 }
 
 .images{
   max-width: 100%;
+  text-align: center;
 }
 
 .square{
-  /*height: 350px;
-  width: 390px;*/
   margin: 10px 3px;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
-  max-width: 33.3%;
+  max-width: 30%;
   height: auto;
 }
