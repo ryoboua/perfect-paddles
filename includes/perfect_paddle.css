@@ -26,15 +26,15 @@
 .menu{
   background-color: black;
   margin: 0 auto;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .menu .logo{
-  display: block;
   height: 50px;
   margin: 10px auto;
   padding-top: 10px;
+  flex-basis: 100%;
 
 }
 .menu ul{
@@ -43,6 +43,8 @@
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
+  flex-basis: 100%;
+
 }
 
 .menu li{
@@ -164,9 +166,16 @@ text-align: center;
 
 .address {
   color: #646464;
-
 }
 
+.icon_name{
+  display: none;
+}
+
+/*use for table
+.rentals td:first-child
+text-align: left;
+*/
 @media (min-width: 720px){
 
 .menu ul{
@@ -181,15 +190,54 @@ text-align: center;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  }
 
-}
+.menu .logo{
+  flex-basis: 45%;
 
+  }
+.menu ul{
+  flex-basis: 45%;
+  align-self: center;
+  }
 .square{
   margin: 10px 3px;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
   width: 32%;
   height: auto;
-    }
+  }
+
+  .information{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    align-items: center;
+    height: 250px;
+    justify-content: center;
+  }
+  .contact_main{
+    max-width: 45%;
+    text-align: left;
+    padding-left: 1em;
+  }
+  .icon_name{
+    display: inline;
+    font: 1em;
+    color: white;
+    text-decoration: none;
+    padding-left: 0.5em;
+  }
+  .information ul {
+    max-width: 45%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .information ul li {
+    margin-left: 200px;
+    padding: 4px;
+  }
+
 }
 
 @media (min-width: 1024px){
