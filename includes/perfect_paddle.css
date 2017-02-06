@@ -125,8 +125,9 @@
 
 .about p {
   font-family: Karla;
-  font-size: 21px;
+  font-size: 1em;
   line-height: 35px;
+  color: black;
 }
 
 .align-left{
@@ -146,6 +147,33 @@ text-align: center;
   margin: 10px 3px;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
   width: 95vw;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 10px auto;
+}
+table, th, td {
+    border: 1px solid rgba(192, 192, 192, 1);
+}
+th, td {
+  font-family: Karla;
+  color: black;
+  font-size: 1em;
+  padding: 1em 0;
+}
+
+th {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+
+table td:first-child{
+text-align: left;
+margin-left: 0px;
+padding-left: 0.5em;
 }
 
 .information {
@@ -172,10 +200,7 @@ text-align: center;
   display: none;
 }
 
-/*use for table
-.rentals td:first-child
-text-align: left;
-*/
+
 @media (min-width: 720px){
 
 .menu ul{

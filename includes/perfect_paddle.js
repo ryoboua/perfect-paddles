@@ -26,12 +26,4 @@ function screenWidth(){
     }
 
   }
-// if (x.matches) {
-//   // window width is at least 720px
-//   $('i').removeClass('fa-2x');
-// } else {
-//   // window width is less than 720px
-//   $('i').addClass('fa-2x');
-// }
-
 }
