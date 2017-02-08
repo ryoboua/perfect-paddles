@@ -232,6 +232,26 @@ padding-left: 0.5em;
   height: auto;
   }
 
+  .large_screen{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about.align-left, table{
+    flex-basis: 49%;
+    }
+
+    table{
+      width: 48%;
+    }
+
+    iframe{
+      width: 95%;
+      margin: 0 auto;
+      background-color: green;
+    }
+
+
   .information{
     display: flex;
     flex-wrap: wrap;
