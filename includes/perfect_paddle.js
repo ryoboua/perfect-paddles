@@ -10,7 +10,7 @@ function screenWidth(){
 
   // media query event handler
   if (matchMedia) {
-    var mq = window.matchMedia("(min-width: 720px)");
+    var mq = window.matchMedia("(min-width: 600px)");
     mq.addListener(WidthChange);
     WidthChange(mq);
   }
@@ -18,10 +18,10 @@ function screenWidth(){
   // media query change
   function WidthChange(mq) {
     if (mq.matches) {
-      // window width is at least 500px
+      // window width is at least 600px
       $('i').removeClass('fa-2x');
     } else {
-      // window width is less than 500px
+      // window width is less than 600px
       $('i').addClass('fa-2x');
     }
 

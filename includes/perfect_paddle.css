@@ -56,26 +56,6 @@ nav .menu a{
   font-weight: bold;
 }
 
-
-/*nav ul{
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 100%;
-
-}
-
-nav li{
-  font-family: Karla;
-  text-transform: uppercase;
-  color: white;
-  font-size: 1em;
-  display: inline-block;
-  max-width: 70%;
-}
-*/
 /*------------------------banner section-------------------------*/
 .banner{
   text-align: center;
@@ -216,7 +196,6 @@ footer {
 }
 footer ul {
   list-style-type: none;
-  /*margin: 0 auto;*/
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -229,7 +208,7 @@ footer ul {
 }
 /*------------------------------------------------*/
 
-@media (min-width: 720px){
+@media (min-width: 600px){
 
 /*---------------------navigation-------------------------------*/
 
@@ -322,7 +301,7 @@ article{
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1140px){
   /*---------------------navigation-------------------------------*/
   nav .menu a{
     padding-left: 2em;
@@ -342,7 +321,7 @@ article{
   }
 
   .hilite {
-      margin: 20px 415px;
+      margin: 20px 400px;
       }
   section .middle{
       margin: 0 auto;
