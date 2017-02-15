@@ -1,0 +1,100 @@
+@font-face {
+    font-family: pacifico;
+    src: url(fonts/Pacifico.ttf);
+}
+@font-face {
+    font-family: Karla-Bold;
+    src: url(fonts/Karla-Bold.ttf);
+}
+@font-face {
+    font-family: Karla-BoldItalic;
+    src: url(fonts/Karla-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Karla-Italic;
+    src: url(fonts/Karla-Italic.ttf);
+}
+@font-face {
+    font-family: Karla-Regular;
+    src: url(fonts/Karla-Regular.ttf);
+}
+
+.menu{
+  background-color: black;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.menu .logo{
+display: inline-block;
+height: 50px;
+float: left;
+margin: 10px 20px;
+}
+.menu ul{
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 0;
+  position: absolute;
+  right: 0px;
+  margin: 25px 20px;
+}
+
+.menu li{
+  font-family: Karla-Regular;
+  text-transform: uppercase;
+  color: white;
+  float: left;
+  margin: 0px 10px;
+}
+
+.clear_both{
+  clear:both;
+}
+
+.jumbotron{
+  text-align: center;
+  background: url('../images/kayak-bkgd.jpg') ;
+  background-size: cover;
+  opacity: 0.6;
+  height: 700px;
+}
+
+h1 {
+  margin: 0 auto;
+  color: white;
+}
+
+.page-title-enjoy{
+  font-family: Karla-Regular;
+  text-transform: uppercase;
+  display: block;
+  font-size: 25px;
+  padding: 70px 0px 0px;
+}
+
+.cursive {
+  font-family: pacifico;
+  display: block;
+  font-size: 50px;
+}
+
+.big {
+  font-size: 90px;
+  /*font-family: pacifico;*/
+}
+
+.hilite {
+  color: white;
+  font-size: 21px;
+  background-color: rgba(0,0,0,0.7);
+  margin: 20px 430px;
+  padding: 5px 0px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}

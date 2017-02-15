@@ -1,32 +1,366 @@
-h1 {
-  color: red;
+@font-face {
+    font-family: pacifico;
+    src: url(fonts/Pacifico.ttf);
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Regular.ttf);
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
 }
 
-.hilite {
-  color: darkred;
+/*---------------------navigation-------------------------------*/
+nav{
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.embiggen {
-  color: blue;
-  font-size: 35px;
+nav .logo{
+  height: 50px;
+  margin: 10px auto;
+  padding-top: 10px;
+  flex-basis: 100%;
+
+}
+
+nav .menu{
+  margin: 0 auto;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+nav .menu a{
+  font-family: Karla;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1em;
   font-weight: bold;
 }
 
-.page-title-enjoy{
+
+/*nav ul{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+
+}
+
+nav li{
+  font-family: Karla;
   text-transform: uppercase;
-  color
+  color: white;
+  font-size: 1em;
+  display: inline-block;
+  max-width: 70%;
+}
+*/
+/*------------------------banner section-------------------------*/
+.banner{
+  text-align: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, .35) 0%,
+  rgba(0, 0, 0, 0.25)100%),
+  url('../images/kayak-bkgd.jpg');
+  background-position: top center;
+  background-size: cover;
+  height: 700px;
+}
+
+.banner h1 {
+  margin: 0 auto;
+  color: white;
+  padding-top: 130px;
+}
+
+.banner h1 span{
+  padding: 10px 0;
+}
+
+.page-title-enjoy{
+  font-family: Karla;
+  text-transform: uppercase;
+  display: block;
+  font-size: 25px;
+  padding: 150px 0px 0px;
 }
 
 .cursive {
-  font-family: 'Zapfino';
-}
+  font-family: pacifico;
+  display: block;
+  font-size: 50px;
+  text-shadow: 2px 0px 6px white;
+  }
 
 .big {
-  font-size: 50px;
+  font-size: 55px;
 }
 
-.square {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+.hilite {
+  color: white;
+  font-size: 21px;
+  background-color: rgba(0,0,0,0.5);
+  margin: 20px 20px;
+  padding: 5px 0px;
+  font-family: Karla;
+}
+
+.register {
+  background-color: #FF5656;
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  border-radius: 500px;
+  padding: 15px;
+  border: 0px;
+  margin-top: 20px;
+}
+/*--------default styling for sections----------*/
+section {
+  color: #646464;
+  text-align: center;
+}
+
+section h2 {
+  font-family: pacifico;
+  font-size: 55px;
+}
+
+section p {
+  font-family: Karla;
+  font-size: 1em;
+  line-height: 35px;
+  color: black;
+}
+/*-------------------------------------------------*/
+.align-left{
+text-align: left;
+margin: 0 5px;
+color: black;
+font-size: 1em;
+}
+
+
+/*--------------Styling for images--------------*/
+.images{
+text-align: center;
+}
+
+.photo{
+  margin: 10px 3px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+  width: 95vw;
+}
+
+/*-----------------table styling--------------*/
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 10px auto;
+}
+table, th, td {
+    border: 1px solid rgba(192, 192, 192, 1);
+}
+th, td {
+  font-family: Karla;
+  color: black;
+  font-size: 1em;
+  padding: 1em 0;
+}
+th {
+  background-color: rgba(230, 230, 230, 1);
+}
+  table td:first-child {
+  text-align: left;
+  margin-left: 0px;
+  padding-left: 0.5em;
+}
+/*------------------------------------------------*/
+.map{
+  text-align: center;
+}
+iframe{
+  width: 95%;
+  height: 350px;
+  padding: 1.5em 0;
+  }
+/*footer - contact information and sociale media links styling*/
+footer {
+  background-color: #212121;
+  text-align: center;
+  font: 1em;
+  color: white;
+  padding: 55px;
+}
+footer ul {
+  list-style-type: none;
+  /*margin: 0 auto;*/
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.address {
+  color: #646464;
+}
+.icon_name{
+  display: none;
+}
+/*------------------------------------------------*/
+
+@media (min-width: 720px){
+
+/*---------------------navigation-------------------------------*/
+
+nav .menu{
+  margin: 0 auto;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-basis: 45%;
+  align-self: center;
+}
+nav .menu a{
+  padding-left: 1em;
+}
+nav .logo{
+  height: 40px;
+  margin: 10px auto;
+  padding-top: 10px;
+  flex-basis: 45%;
+  align-self: flex-start;
+}
+/*banner title styling for tablet*/
+.hilite {
+    margin: 20px 75px;
+    }
+section p {
+  margin: 0 1em;
+}
+/*--------------Styling for images table view--------------*/
+
+.images {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  }
+.photo {
+  margin: 10px 3px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+  width: 32%;
+  height: auto;
+  }
+/*Setting rentals paragrah and table on same row on table and desktop view*/
+.large_screen{
+  display: flex;
+  flex-wrap: wrap;
+  }
+section.align-left, table{
+  flex-basis: 49%;
+  }
+table{
+  width: 48%;
+  }
+
+/*footer tablet - contact information and sociale media links styling*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  align-items: center;
+  height: 250px;
+  justify-content: space-around;
+  }
+footer ul {
+  max-width: 45%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  }
+footer ul li {
+  margin-left: 200px;
+  padding: 4px;
+  }
+article{
+  max-width: 45%;
+  text-align: left;
+  padding-left: 1em;
+  }
+.icon_name{
+  display: inline;
+  font: 1em;
+  color: white;
+  text-decoration: none;
+  padding-left: 0.5em;
+  }
+
+
+}
+
+@media (min-width: 1024px){
+  /*---------------------navigation-------------------------------*/
+  nav .menu a{
+    padding-left: 2em;
+  }
+
+  nav .menu{
+    flex-basis: 45%;
+    flex-grow: 1;
+  }
+
+  nav .logo{
+    flex-basis: 20%;
+  }
+
+  .big {
+    font-size: 110px;
+  }
+
+  .hilite {
+      margin: 20px 415px;
+      }
+  section .middle{
+      margin: 0 auto;
+      max-width: 700px;
+  }
+  .images{
+  padding: 40px 0;
+  }
+  .photo {
+    margin: 10px 15px;
+    width: 30%;
+    }
+
+  article{
+      max-width: 70%;
+      text-align: left;
+      flex-grow: 1;
+      padding-left: 1em;
+      }
+
 }
